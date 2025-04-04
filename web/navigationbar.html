@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly.io Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e8d9f1, #d3e2f4);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid #cccccc92;
+            border-radius: 30px;
+            box-shadow: 4px 3px 10px rgb(148, 169, 197);
+            border: 1px solid rgb(164, 193, 230);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #181818;
+        }
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border-radius: 20px;
+            
+        }
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .buttons .sign-in {
+            background: none;
+            border: 1px solid #ccc;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .buttons .get-started {
+            background: #7a1ee4;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .buttons .get-started:hover {
+            background: #5c0db5;
+        }
+        .sign-in:hover{
+            background-color:rgb(148, 169, 197);
+
+        }
+        p{
+            font-size: 20px; 
+            display: flex; 
+            text-align:center;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           <p><img src="images/flyio.png" alt="Fly.io Logo">fly io</p>
+
+        
+        </div>
+        <div class="nav-links">
+            <a href="#" target="_blank">Articles </a>
+            <a href="#" target="_blank">Security</a>
+            <a href="#" target="_blank">Infra Log</a>
+            <a href="#" target="_blank">Docs</a>
+            <a href="#" target="_blank">Community</a>
+            <a href="#" target="_blank">Status</a>
+            <a href="#" target="_blank">Pricing</a>
+        </div>
+        <div class="buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="get-started">Get Started</button>
+        </div>
+    </nav>
+</body>
+</html>

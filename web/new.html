@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(94, 87, 87);
+            padding: 25px;
+            border-radius: 10px;
+            width: 400px;
+            position: relative; 
+            box-shadow: 4px 4px 3px blue, -4px -4px  3px red; 
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #f90707;
+            margin-bottom: 20px;
+            text-shadow: 1px 3px 1px black;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        small {
+            display: block;
+            color: #cbc0c0;
+            margin-top: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .checkbox input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <p>Join our community</p>
+        
+        <form action="#" method="POST">
+            <div class="row">
+                <div class="col">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter your first name" required>
+                </div>
+                <div class="col">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter your last name" required>
+                </div>
+            </div>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number">
+            <small>Include country code if outside USA</small>
+
+            <label>Username</label>
+            <input type="text" placeholder="Choose a username" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Create a password" required>
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm your password" required>
+
+            <small>Your password must be at least 8 characters long, contain a mix of upper and lower case letters, a number, and a special character.</small>
+
+            <div class="checkbox">
+                <input type="checkbox" required>
+                <label>I agree to the Terms of Service and Privacy Policy.</label>
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>
